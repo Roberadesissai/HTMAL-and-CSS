@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 5% 10%;
+  background-color: #0f151d;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 350px;
+  grid-gap: 16px;
+  margin: 40px 0 40px 0;
+}
+
+.card_category {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 200;
+  color: #ecf0f1;
+  margin: 0;
+}
+
+.card_Title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #ecf0f1;
+  margin: 10px 0 0 0;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 30px 18px -0px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.card:nth-child(1) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-david-bartus-4418939.jpg");
+}
+.card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-benjamin-suter-2362002.jpg");
+}
+.card:nth-child(3) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-eberhard-grossgasteiger-1287145.jpg");
+}
+.card:nth-child(4) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-eberhard-grossgasteiger-1366913.jpg");
+}
+.card:nth-child(5) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-eberhard-grossgasteiger-1366919.jpg");
+}
+.card:nth-child(6) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-roberto-nickson-2559941.jpg");
+}
+.card:nth-child(7) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-kelvin-valerio-617278.jpg");
+}
+.card:nth-child(8) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-eberhard-grossgasteiger-1624496.jpg");
+}
+.card:nth-child(9) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-oliver-sjöström-1433052.jpg");
+}
+.card:nth-child(10) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-valdemaras-d-1647962.jpg");
+}
+.card:nth-child(11) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-todd-trapani-1420440.jpg");
+}
+.card:nth-child(12) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("IMAGES/pexels-irina-iriser-673803.jpg");
+}
+
+
+.card:nth-child(1),
+:nth-child(6),
+:nth-child(7),
+:nth-child(12) {
+  grid-column-start: span 6;
+}
+
+.card:nth-child(2),
+:nth-child(3),
+:nth-child(4),
+:nth-child(5),
+:nth-child(8),
+:nth-child(9),
+:nth-child(10)
+:nth-child(11) {
+  grid-column-start: span 3;
+}
+
+.card:nth-child(10),:nth-child(11){
+    grid-column-start: span 3;
+
+}
+
+@media screen and (max-width: 1200px){
+    .card:nth-child(n){
+        grid-column-start: span 6;
+    }
+
+    
+}
+
+@media screen and (max-width: 800px){
+    .card:nth-child(n){
+        grid-column-start: span 12;
+    }
+
+    
+}

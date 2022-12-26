@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="horizontal-scroll">
+        <button
+          class="btn-scroll"
+          id="btn-scroll-left"
+          onclick="scrollHorizontally(1)"
+        >
+          <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+        <button
+          class="btn-scroll"
+          id="btn-scroll-right"
+          onclick="scrollHorizontally(-1)"
+        >
+          <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+        <div class="story-container">
+          <div class="story-circle">
+            <img src="./images/pexels-benjamin-suter-2362002.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-david-bartus-4418939.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-eberhard-grossgasteiger-1287145.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-eberhard-grossgasteiger-1366913.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-eberhard-grossgasteiger-1366919.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-eberhard-grossgasteiger-1624496.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-graphicgumcom-1123982.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-invisiblepower-1076885.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-irina-iriser-673803.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-oliver-sjöström-1433052.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-roberto-nickson-2559941.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-sean-patrick-1057663.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-todd-trapani-1420440.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-valdemaras-d-1647962.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-stephan-seeber-1668246.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-phil-kallahar-983200.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-phil-kallahar-983200.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-phil-kallahar-983200.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-phil-kallahar-983200.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-phil-kallahar-983200.jpg" />
+          </div>
+          <div class="story-circle">
+            <img src="./images/pexels-phil-kallahar-983200.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let currentScrollPosition = 0;
+      let scrollAmount = 320;
+
+      const sCont = document.querySelector("story-container");
+      const hScroll = document.querySelector("horizontal-scroll");
+
+      let maxScroll = -sCont.offsetwidth + hScroll.offsetWidth;
+
+      function scrollHorizontally(val) {
+        currentScrollPosition += val * scrollAmount;
+        if (val < maxScroll) {
+          maxScroll = val;
+        }
+        if (currentScrollPosition > 0) {
+          currentScrollPosition = 0;
+        }
+        if (currentScrollPosition < maxScro11) {
+          currentScrollposition = maxScroll;
+        }
+
+        sCont.style.left = currentScrollPosition + "px";
+      }
+    </script>
+  </body>
+</html>
